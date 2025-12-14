@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    border-bottom: 1px solid red;
+}
+
+nav {
+    background: linear-gradient(to top, #00ffff, #0091ff, #034da2);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+nav h3 a {
+    font-size: 24px;
+    color: white;
+    margin-right: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul a {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+nav a:active {
+    color: rgb(218, 218, 218);
+}
+
+main {
+    background-color: #f0faff;
+}
+
+#foods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#foods section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black,
+        -2px -2px 5px black;
+    margin: 10px;
+    background-color: rgb(0, 136, 255);
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px #000000,
+        1px 1px 2px #000000,
+        -1px -1px 2px #000000;
+
+    transition: all 200ms linear;
+    text-align: center;
+    align-content: end;
+
+    p {
+        display: none;
+    }
+
+}
+
+#foods section:hover {
+    transform: scale(1.03, 1.03);
+
+    h2 {
+        display: none;
+    }
+    p {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+#foods {
+    border-bottom: 1px solid red;
+}
+
+#food1 {
+    background: url("../images/ash.jpg");
+}
+#food2 {
+    background: url("../images/baghali-polo-mahiche.jpg");
+}
+#food3 {
+    background: url("../images/chelo-kabab.jpg");
+}
+#food4 {
+    background: url("../images/dizi.jpg");
+}
+#food5 {
+    background: url("../images/dolmeh.jpg");
+}
+#food6 {
+    background: url("../images/fesenjan.jpg");
+}
+#food7 {
+    background: url("../images/gheymeh.jpg");
+}
+#food8 {
+    background: url("../images/ghormeh-sabzi.jpg");
+}
+#food9 {
+    background: url("../images/jooje-kabab.jpg");
+}
+#food10 {
+    background: url("../images/lobia-polo.webp");
+}
+#food11 {
+    background: url("../images/makarani.png");
+}
+#food12 {
+    background: url("../images/zereahk-polo.jpg");
+}
+
+footer {
+    background: linear-gradient(to top, #034da2, #0091ff, #00ffff);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+#contact,
+#about {
+    border-bottom: 1px solid red;
+}
+
+.title {
+    margin: 5px;
+    color: #000000;
+}
+
+.paragraph {
+    margin: 15px 5px 5px 5px;
+    line-height: 30px;
+    color: #000000;
+}
+
+#contact a {
+    color: rgb(0, 0, 255);
+}
+
+footer {
+    border-bottom: 1px solid white;
+}
+
+footer h1 {
+    font-size: 26px;
+    background: linear-gradient(to right, #ff3d3d, #ff0000, #c70000, #b80000, #540000);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: myanimation 5s linear infinite;
+}
+
+@keyframes myanimation {
+    to {
+        background-position-x: -500px;
+    }
+}
