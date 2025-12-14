@@ -167,7 +167,6 @@ footer {
 footer h1 {
     font-size: 26px;
     background: linear-gradient(to right, #ff3d3d, #ff0000, #c70000, #b80000, #540000);
-    background-size: cover;
     background-clip: text;
     color: transparent;
     animation: myanimation 5s linear infinite;
